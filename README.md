@@ -9,7 +9,7 @@
 CURL:
 
 ```sh
-curl -O TDB
+curl -o /usr/local/bin/gsex https://git.io/gsex && chmod 755 /usr/local/bin/gsex
 ```
 
 npm:
