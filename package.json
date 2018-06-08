@@ -1,0 +1,27 @@
+{
+  "name": "gsex",
+  "version": "0.1.0",
+  "description": "(g)it (s)tash (ex)plorer",
+  "main": "gsex",
+  "bin": "gsex",
+  "scripts": {
+    "test": "echo 'It works!'"
+  },
+  "keywords": [
+    "git",
+    "stash",
+    "zsh",
+    "fzf",
+    "preview"
+  ],
+  "author": "Kevin Lanni <therealklanni@gmail.com> (https://github.com/therealklanni)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/therealklanni/gsex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/therealklanni/gsex/issues"
+  },
+  "homepage": "https://github.com/therealklanni/gsex#readme"
+}
