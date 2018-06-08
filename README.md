@@ -1,6 +1,6 @@
 # **g**(it) **s**(tash) **ex**(plorer)
 
-> Interactive `git stash` explorer using [`fzf`](https://github.com/junegunn/fzf))
+> Interactive `git stash` explorer using [`fzf`](https://github.com/junegunn/fzf)
 
 ![demo](demo.gif)
 
