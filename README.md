@@ -2,6 +2,8 @@
 
 > Interactive `git stash` explorer using [`fzf`](https://github.com/junegunn/fzf))
 
+![demo](demo.gif)
+
 ## Installation
 
 CURL:
