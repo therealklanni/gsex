@@ -1,4 +1,4 @@
-# **g**(it) **s**(tash) **ex**(plorer)
+# g(it) s(tash) ex(plorer)
 
 > Interactive `git stash` explorer using [`fzf`](https://github.com/junegunn/fzf)
 
@@ -28,11 +28,15 @@ Type to fuzzy-search stashes.
 
 Keys:
 
-- **up/down**: navigate stashes
+- **up/down**: navigate (click line also works)
 - **ctrl-b**: create a branch from selected stash
 - **del**: drop selected stash
 - **enter**: view full diff (less)
 - **esc**: exit gsex
+
+## Related tools
+
+[gdex](https://github.com/therealklanni/gdex) - g(it) d(iff) ex(plorer)
 
 ## License
 
