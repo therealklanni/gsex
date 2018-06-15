@@ -7,8 +7,10 @@ command -v fzf > /dev/null || ( echo "Please install fzf to use gsex" && exit 1 
 [[ -z $(git stash list) ]] && echo "No stashes" && exit 1
 
 while out=$(git stash list "$@" |
-            fzf --ansi --no-sort --reverse --print-query --query="$query"      \
-                --preview 'git show --patience --color=always -p "$(echo {} | cut -d: -f1)" | less -R' \
+            fzf --ansi --no-sort --reverse --print-query --query="$query" \
+                --preview 'git show --patience --stat --pretty=oneline --color=always \
+                  -p "$(echo {} | cut -d: -f1)" | less -R' \
+                --preview-window=bottom:60% \
                 --expect=ctrl-m,ctrl-a,ctrl-p,ctrl-b,del);
 do
     # Tokenize selection by newline
