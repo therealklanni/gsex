@@ -38,6 +38,8 @@ Keys:
 
 [gdex](https://github.com/therealklanni/gdex) - g(it) d(iff) ex(plorer)
 
+[glex](https://github.com/therealklanni/glex) - g(it) l(og) ex(plorer)
+
 ## License
 
 MIT © Kevin Lanni
