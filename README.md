@@ -29,6 +29,8 @@ Type to fuzzy-search stashes.
 Keys:
 
 - **up/down**: navigate (click line also works)
+- **ctrl-p**: pop selected stash
+- **ctrl-a**: apply selected stash
 - **ctrl-b**: create a branch from selected stash
 - **del**: drop selected stash
 - **enter**: view full diff (less)

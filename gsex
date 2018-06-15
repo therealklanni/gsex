@@ -9,7 +9,7 @@ command -v fzf > /dev/null || ( echo "Please install fzf to use gsex" && exit 1 
 while out=$(git stash list "$@" |
             fzf --ansi --no-sort --reverse --print-query --query="$query"      \
                 --preview 'git show --patience --color=always -p "$(echo {} | cut -d: -f1)" | less -R' \
-                --expect=ctrl-m,ctrl-b,del);
+                --expect=ctrl-m,ctrl-a,ctrl-p,ctrl-b,del);
 do
     # Tokenize selection by newline
     selection=("${(f)out}")
@@ -24,6 +24,18 @@ do
         # enter or ctrl-m is just a diff
         ctrl-m)
             git show --patience --color=always -p "$reflog_selector" | less -R
+            ;;
+        # ctrl-a applies stash
+        ctrl-a)
+            idx=$(echo "$selection[3]" | cut -d'{' -f2 | cut -d'}' -f1)
+            git stash apply stash@{"$idx"}
+            break
+            ;;
+        # ctrl-p pops stash
+        ctrl-p)
+            idx=$(echo "$selection[3]" | cut -d'{' -f2 | cut -d'}' -f1)
+            git stash pop stash@{"$idx"}
+            break
             ;;
         # ctrl-b checks out the stash as a branch
         ctrl-b)
