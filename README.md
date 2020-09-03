@@ -1,4 +1,4 @@
-# g(it) s(tash) ex(plorer)
+# g(it) s(tash) ex(plorer) ![](https://img.shields.io/npm/dt/gsex?logo=npm)
 
 > Interactive `git stash` explorer using [`fzf`](https://github.com/junegunn/fzf)
 
